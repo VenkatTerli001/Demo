@@ -18,6 +18,11 @@
 			<artifactId>venkat</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>sankar</groupId>
+			<artifactId>sankar</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 	<!-- <distributionManagement> <repository> <id>nexus</id> <url>https://repo.dcts.tdbank.com:9443/content/repositories/releases</url> 
 		</repository> </distributionManagement> -->
