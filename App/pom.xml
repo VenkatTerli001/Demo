@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>App</groupId>
 	<artifactId>App</artifactId>
@@ -15,66 +16,43 @@
 		</dependency>
 	</dependencies>
 	<scm>
-		<developerConnection>scm:git:[fetch=]https://github.com/VenkatTerli001/Demo.git[push=]ssh:git@github.com:VenkatTerli001/Demo.git</developerConnection>
-	  <tag>App</tag>
-  </scm>
+		<connection>scm:git:https://github.com/VenkatTerli001/Demo.git</connection>
+		<developerConnection>scm:git:https://github.com/VenkatTerli001/Demo.git</developerConnection>
+	</scm>
+	<!-- snip -->
 	<build>
-		<finalName>App</finalName>
 		<plugins>
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-scm-plugin</artifactId>
-				<version>1.9.5</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.codehaus.plexus</groupId>
+						<artifactId>plexus-utils</artifactId>
+						<version>2.1</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.maven.scm</groupId>
+						<artifactId>maven-scm-provider-gitexe</artifactId>
+						<version>1.2</version>
+					</dependency>
+				</dependencies>
+				<version>1.0</version>
 				<configuration>
-					<connectionType>developerConnection</connectionType>
-					<username>wfa-service-account</username>
-					<password>changeme</password>
-					<!-- <goals>compile</goals> -->
-					<goals>
-						<goal>compile</goal>
-						<goal>install</goal>
-					</goals>
+					<tag>test</tag>
+					<connectionType>connection</connectionType>
 				</configuration>
+				<executions>
+					<execution>
+						<id>tag</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>tag</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>2.5.2</version>
-				<configuration>
-					<goals>deploy</goals>
-					<scmCommentPrefix>[wfb]</scmCommentPrefix>
-					<tagNameFormat>@{project.artifactId}</tagNameFormat>
-					<checkModificationExcludes>
-						<checkModificationExclude>TarFile/pom.xml</checkModificationExclude>
-						<checkModificationExclude>TarFile/target/TarFile.tar</checkModificationExclude>
-					</checkModificationExcludes>
-				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-scm-publish-plugin</artifactId>
-				<version>1.1</version>
-				<configuration>
-					<checkoutDirectory>${user.home}/my-site-content-scm</checkoutDirectory>
-					<tryUpdate>true</tryUpdate>
-				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>org.codehaus.plexus</groupId>
-				<artifactId>plexus-utils</artifactId>
-				<version>2.1</version>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.scm</groupId>
-				<artifactId>maven-scm-provider-gitexe</artifactId>
-				<version>1.2</version>
-			</plugin>
-
 		</plugins>
 	</build>
+
 </project>
