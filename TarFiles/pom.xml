@@ -10,8 +10,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>balaji</groupId>
-  <artifactId>balaji</artifactId>
-  <version>1.0-SNAPSHOT</version>
+			<artifactId>balaji</artifactId>
+			<version>1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>venkat</groupId>
@@ -28,20 +28,18 @@
 		</repository> </distributionManagement> -->
 
 
-	<!-- <scm>
-		<connection>scm:git:ssh://github.com/VenkatTerli001/Demo.git</connection> 
-			<developerConnection>scm:git:ssh://wfa-service-account@repo.dcts.tdbank.com:7999/wfb/webfundapplication-b-repo.git</developerConnection> 
-			<developerConnection>scm:git:https://wfa-service-account@repo.dcts.tdbank.com/scm/wfb/webfundapplication-b-repo.git</developerConnection> 
-			<developerConnection>scm:git:[fetch=]https://wfa-service-account@repo.dcts.tdbank.com/scm/wfb/webfundapplication-b-repo.git</developerConnection> 
-			<developerConnection>scm:git:github.com/VenkatTerli001/Demo.git</developerConnection> 
-			<url>https://github.com/VenkatTerli001/Demo</url> <tag>@{project.artifactId}</tag>
-
-		<developerConnection>scm:git:[fetch=]https://github.com/VenkatTerli001/Demo.git[push=]ssh:git@github.com:VenkatTerli001/Demo.git</developerConnection>
-	</scm> -->
+	<!-- <scm> <connection>scm:git:ssh://github.com/VenkatTerli001/Demo.git</connection> 
+		<developerConnection>scm:git:ssh://wfa-service-account@repo.dcts.tdbank.com:7999/wfb/webfundapplication-b-repo.git</developerConnection> 
+		<developerConnection>scm:git:https://wfa-service-account@repo.dcts.tdbank.com/scm/wfb/webfundapplication-b-repo.git</developerConnection> 
+		<developerConnection>scm:git:[fetch=]https://wfa-service-account@repo.dcts.tdbank.com/scm/wfb/webfundapplication-b-repo.git</developerConnection> 
+		<developerConnection>scm:git:github.com/VenkatTerli001/Demo.git</developerConnection> 
+		<url>https://github.com/VenkatTerli001/Demo</url> <tag>@{project.artifactId}</tag> 
+		<developerConnection>scm:git:[fetch=]https://github.com/VenkatTerli001/Demo.git[push=]ssh:git@github.com:VenkatTerli001/Demo.git</developerConnection> 
+		</scm> -->
 	<scm>
-	<connection>scm:git:ssh://github.com/VenkatTerli001/Demo.git</connection>
-	<developerConnection>scm:git:ssh:https://github.com/VenkatTerli001/Demo.git</developerConnection>
-	<url>https://github.com/VenkatTerli001/Demo.git</url>
+		<connection>scm:git:ssh://github.com/VenkatTerli001/Demo.git</connection>
+		<developerConnection>scm:git:ssh:https://github.com/VenkatTerli001/Demo.git</developerConnection>
+		<url>https://github.com/VenkatTerli001/Demo.git</url>
 	</scm>
 	<build>
 		<finalName>TarFile</finalName>
@@ -76,8 +74,8 @@
 				<version>1.9.5</version>
 				<configuration>
 					<connectionType>developerConnection</connectionType>
-					<username>wfa-service-account</username>
-					<password>changeme</password>
+					<username>VenkatTerli001</username>
+					<password>Parsvik@007</password>
 					<!-- <goals>compile</goals> -->
 					<goals>
 						<goal>compile</goal>
