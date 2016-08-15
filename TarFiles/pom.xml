@@ -27,13 +27,15 @@
 
 	 
 <scm>
-    	<connection>scm:git:ssh://github.com/VenkatTerli001/Demo.git</connection>
-    	<!-- <developerConnection>scm:git:ssh://wfa-service-account@repo.dcts.tdbank.com:7999/wfb/webfundapplication-b-repo.git</developerConnection>-->
-		<!-- <developerConnection>scm:git:https://wfa-service-account@repo.dcts.tdbank.com/scm/wfb/webfundapplication-b-repo.git</developerConnection>-->
-	 	<!--<developerConnection>scm:git:[fetch=]https://wfa-service-account@repo.dcts.tdbank.com/scm/wfb/webfundapplication-b-repo.git</developerConnection>-->
+    	<!-- <connection>scm:git:ssh://github.com/VenkatTerli001/Demo.git</connection>
+    	<developerConnection>scm:git:ssh://wfa-service-account@repo.dcts.tdbank.com:7999/wfb/webfundapplication-b-repo.git</developerConnection>
+		<developerConnection>scm:git:https://wfa-service-account@repo.dcts.tdbank.com/scm/wfb/webfundapplication-b-repo.git</developerConnection>
+	 	<developerConnection>scm:git:[fetch=]https://wfa-service-account@repo.dcts.tdbank.com/scm/wfb/webfundapplication-b-repo.git</developerConnection>
 	 	<developerConnection>scm:git:github.com/VenkatTerli001/Demo.git</developerConnection>
     <url>https://github.com/VenkatTerli001/Demo</url>    
-    <tag>@{project.artifactId}</tag>
+    <tag>@{project.artifactId}</tag> -->
+    
+    <developerConnection>scm:git:[fetch=]https://github.com/VenkatTerli001/Demo.git[push=]ssh:git@github.com:VenkatTerli001/Demo.git</developerConnection>
   </scm>
 <build>
 <finalName>TarFile</finalName>
